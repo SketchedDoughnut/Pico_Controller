@@ -1,3 +1,7 @@
+'''
+Button mapping for an Xbox controller.
+'''
+
 class BUTTONS:
     A = 0
     B = 1
