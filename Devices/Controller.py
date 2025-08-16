@@ -1,3 +1,7 @@
+'''
+Emulates a standard controller with 2 joysticks, bumpers, triggers, 8 buttons and 2 joystick buttons.
+'''
+
 import usb_hid
 import time
 
