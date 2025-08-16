@@ -53,10 +53,9 @@ class ControllerInterface:
         '''
         Takes a value from -127 to 127, moving the joystick left and right respectively.
         '''
-        if value < -127: value = -127
-        if value > 127: value = 127
-        unsigned = value + 128 # converted from -127 to 127, to 0-255 (got rid of the sign)
-        self.js_map[joystick] = unsigned
+        # if value < -127: value = -127
+        # if value > 127: value = 127
+        self.js_map[joystick] = value
         return
     
     # TODO
