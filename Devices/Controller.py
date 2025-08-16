@@ -70,6 +70,11 @@ class ControllerInterface:
         self.setJoystick(joystick, current)
         return 
     
+    def resetJoysticks(self):
+        for key in self.js_map.keys():
+            self.js_map[key] = 0
+        return
+        
     def resetButtons(self):
         '''
         Resets all of the buttons to off (0).
