@@ -77,7 +77,7 @@ class ControllerInterface:
         Moves the joystick by the inputted amount, as opposed to fully setting it.
         Takes a value from -127 to 127.
         '''
-        current = self.js_map[joystick]
+        current = self.getJoystick(joystick)
         current += value
         self.setJoystick(joystick, current)
         return 
