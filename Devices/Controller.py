@@ -10,8 +10,8 @@ class ControllerInterface:
     def __init__(self):
         self.gamepad = None
         self.buttons = 0
-        self.x = 'lx'
-        self.y = 'ly'
+        self.lx = 'lx'
+        self.ly = 'ly'
         self.rx = 'rx'
         self.ry = 'ry'
         self.js_map = {
@@ -106,8 +106,8 @@ class ControllerInterface:
         report[1] = (self.buttons >> 8) & 0xFF # high byte (buttons 9–16)
         
         # joysticks - 4 bytes
-        report[2] = self.js_map[self.x]  # left X
-        report[3] = self.js_map[self.y]  # left Y
+        report[2] = self.js_map[self.lx]  # left X
+        report[3] = self.js_map[self.ly]  # left Y
         report[4] = self.js_map[self.rx]  # right X
         report[5] = self.js_map[self.ry] # right Y
         
