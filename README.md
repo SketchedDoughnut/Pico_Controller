@@ -1,5 +1,5 @@
 # Pico
-Hello! Here you will find a variety of different projects involving a Raspberry Pi Pico 2W. Things from simulating a controller to translating inputs from a custom device to running intelligent programs, there is so many to see!
+Hello! Here you will find a variety of different projects involving a Raspberry Pi Pico 2W. Things from simulating a controller to translating inputs from a custom device to running intelligent programs, there is so much to see!
 
 *** 
 
